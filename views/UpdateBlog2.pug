@@ -1,0 +1,52 @@
+extends layout
+
+
+block content
+
+
+ .container
+  form.form-horizontal( method="post")
+
+
+   .form-group
+    .col-sm-2
+     label.label-control(for="BlogThumbnailI") Blog Thumbnail:
+    .col-sm-6
+     input.form-control(type="text" name='BlogThumbnailI'  required value=''+Blog.BlogThumbnail)
+  
+   .form-group
+    .col-sm-2
+     label.label-form(for='BlogTitleI') Blog Title:
+    .col-sm-6
+     input.form-control(type="text" name='BlogTitleI' required value=''+Blog.BlogTitle)
+  
+
+   .form-group
+    .col-sm-2
+     label.label-form(for='BlogBodyI') Blog Body:
+    .col-sm-6
+     textarea.form-control(name='BlogBodyI' rows='6' required)
+
+     
+ 
+
+   .form-group
+    .col-sm-2
+     label.label-form(for='BlogAuthorI') Blog Author:
+    .col-sm-6
+     input.form-control(type="text" name='BlogAuthorI'  required value=''+Blog.BlogAuthor)
+
+   .form-group
+    .col-sm-2
+     label.form-label(for="BlogCatigoryI") Blog Catigory
+    .col-sm-6
+     select.form-control(name='BlogCatigoryI'  required )
+      each catigory in Catigories
+       option(value=''+catigory._id)=catigory.CatigoryName
+    
+   
+   .form.group
+    .col-sm-2.col-sm-offset-2
+     input.btn.btn-primary(type='submit')
+   
+  
