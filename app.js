@@ -21,8 +21,7 @@ var AdminRoutes = require('./routes/AdminRoutes.js')
 
 // connect to mongodb
 
-mongoose.connect('mongodb url
-',{ useNewUrlParser: true });
+mongoose.connect('process.env.mongodbSite',{ useNewUrlParser: true });
 
 //
 
