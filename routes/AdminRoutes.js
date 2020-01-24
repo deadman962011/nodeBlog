@@ -2,51 +2,39 @@ var express = require('express');
 
 var router = express.Router();
 
+var AdminController = require('../controllers/AdminCtrlr')
 
-router.get('/Catigory',function (req,res,next) {
-    
-})
 
-router.post('/Catigory',function (req,res,next) {
-    
-})
+router.get('/Catigory',AdminController.CatigoryGet)
 
 
 
-
-router.get('/AddBlog',function (req,res,next) {
-    
-})
-
-router.post('/AddBlog',function (req,res,next) {
-    
-})
-
-
-router.get('/DelBlog',function (req,res,next) {
-    
-})
+router.post('/Catigory',AdminController.CatigoryPost)
 
 
 
-router.post('/DelBlog',function (req,res,next) {
-    
-})
+
+router.get('/AddBlog',AdminController.AddBlogGet)
 
 
-router.get('/UpdateBlog',function (req,res,next) {
-    
-})
+
+router.post('/AddBlog',AdminController.AddBlogPost)
 
 
-router.get('/UpdateBlog/:BlogId',function(req,res,next){
-
-})
+router.get('/DelBlog',AdminController.DelBlogGet)
 
 
-router.post('/UodateBlog/:BlogId',function(req,res,next){
 
-})
+router.post('/DelBlog',AdminController.DelBlogPost)
+
+
+router.get('/UpdateBlog',AdminController.UpdateBlogGet)
+
+
+router.get('/UpdateBlog/:BlogId',AdminController.UpdateBlogGet2)
+
+
+router.post('/UpdateBlog/:BlogId',AdminController.UpdateBlogPost)
 
 
 

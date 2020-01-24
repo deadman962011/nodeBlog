@@ -8,7 +8,10 @@ const app = express();
 
 
 
+//require routes
 
+var mainRoutes = require('./routes/mainRoutes.js')
+var AdminRoutes = require('./routes/AdminRoutes.js')
 
 
 
@@ -36,6 +39,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 //
 
 
+
+//use routes 
+
+app.use('/',mainRoutes)
+app.use('/Admin',AdminRoutes)
 
 
 

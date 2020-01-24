@@ -2,10 +2,10 @@ var express = require('express')
 
 var router = express.Router();
 
+var mainController = require('../controllers/mainController')
 
-router.get('/',function(req,res,next){
-    
-})
+
+router.get('/',mainController.indexGet)
 
 
 module.exports = router;
