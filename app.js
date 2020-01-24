@@ -49,7 +49,7 @@ app.use('/Admin',AdminRoutes)
 
 
 
-app.listen(80,function (err) {
+app.listen(8080,function (err) {
 
 if(!err){
   console.log('nodeBlog running on 8080');
