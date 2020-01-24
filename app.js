@@ -21,7 +21,7 @@ var AdminRoutes = require('./routes/AdminRoutes.js')
 
 // connect to mongodb
 
-mongoose.connect('mongodb+srv://deadman962011:a55221225522122@blaxkclauser-bp8pp.mongodb.net/test?retryWrites=true&w=majority
+mongoose.connect('mongodb url
 ',{ useNewUrlParser: true });
 
 //
