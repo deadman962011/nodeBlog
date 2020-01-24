@@ -21,7 +21,8 @@ var AdminRoutes = require('./routes/AdminRoutes.js')
 
 // connect to mongodb
 
-mongoose.connect('mongodb://127.0.0.1/nodeBlog',{ useNewUrlParser: true });
+mongoose.connect('mongodb+srv://deadman962011:a55221225522122@blaxkclauser-bp8pp.mongodb.net/test?retryWrites=true&w=majority
+',{ useNewUrlParser: true });
 
 //
 
@@ -49,10 +50,10 @@ app.use('/Admin',AdminRoutes)
 
 
 
-app.listen(4000,function (err) {
+app.listen(80,function (err) {
 
 if(!err){
-  console.log('nodeBlog running on 4000');
+  console.log('nodeBlog running on 8080');
 }
 
 })
